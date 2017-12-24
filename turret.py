@@ -117,7 +117,7 @@ class Turret ():
 		print "shooting! from nerfBlasterTurret"
 
 		GPIO.output(self.FIRE_PIN, GPIO.LOW)
-		time.sleep(.2)
+		time.sleep(.01)
 		GPIO.output(self.FIRE_PIN, GPIO.HIGH)
 		
 		return self
