@@ -26,7 +26,7 @@ class Turret ():
 	# Init stepper motors
 	def initMotors (self):
 	 	# new Motor HAT
-		self.mh = Adafruit_MotorHAT(addr = 0x60)
+		self.mh = Adafruit_MotorHAT(addr = 0x64)
 		atexit.register(self.disableTurret)
 
 		#create and set stepper motor objects
